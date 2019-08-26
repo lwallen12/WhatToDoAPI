@@ -1,0 +1,14 @@
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\bin\Debug\netcoreapp2.1\WhatToDoAPI.deps.json
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\bin\Debug\netcoreapp2.1\WhatToDoAPI.runtimeconfig.json
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\bin\Debug\netcoreapp2.1\WhatToDoAPI.runtimeconfig.dev.json
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\bin\Debug\netcoreapp2.1\WhatToDoAPI.dll
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\bin\Debug\netcoreapp2.1\WhatToDoAPI.pdb
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Debug\netcoreapp2.1\WhatToDoAPI.csprojAssemblyReference.cache
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Debug\netcoreapp2.1\WhatToDoAPI.csproj.CoreCompileInputs.cache
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Debug\netcoreapp2.1\WhatToDoAPI.RazorAssemblyInfo.cache
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Debug\netcoreapp2.1\WhatToDoAPI.RazorAssemblyInfo.cs
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Debug\netcoreapp2.1\WhatToDoAPI.AssemblyInfoInputs.cache
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Debug\netcoreapp2.1\WhatToDoAPI.AssemblyInfo.cs
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Debug\netcoreapp2.1\WhatToDoAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Debug\netcoreapp2.1\WhatToDoAPI.dll
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Debug\netcoreapp2.1\WhatToDoAPI.pdb
