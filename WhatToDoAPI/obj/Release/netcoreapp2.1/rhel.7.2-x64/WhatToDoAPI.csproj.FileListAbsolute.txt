@@ -1,0 +1,15 @@
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\bin\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\bin\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI.deps.json
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\bin\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI.runtimeconfig.json
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\bin\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI.runtimeconfig.dev.json
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\bin\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI.dll
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\bin\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI.pdb
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI.csprojAssemblyReference.cache
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI.csproj.CoreCompileInputs.cache
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI.RazorAssemblyInfo.cache
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI.RazorAssemblyInfo.cs
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI.AssemblyInfoInputs.cache
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI.AssemblyInfo.cs
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI.dll
+C:\Users\Will\source\repos\WhatToDoAPI\WhatToDoAPI\obj\Release\netcoreapp2.1\rhel.7.2-x64\WhatToDoAPI.pdb
