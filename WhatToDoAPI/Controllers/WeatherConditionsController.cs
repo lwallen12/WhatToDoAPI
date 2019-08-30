@@ -57,7 +57,7 @@ namespace WhatToDoAPI.Controllers
             }
 
             //var weatherCondition =  from t in _context.WeatherCondition
-            //                             where t.TimeFrame.Equals(timeFrame)
+            //                             where t.TimeFrame.Equals(timeFrame)  
             //                             select new { weatherCondition = t.Name };
 
             var weatherCondition = _context.WeatherCondition.Where(s => s.TimeFrame.Equals(timeFrame));
