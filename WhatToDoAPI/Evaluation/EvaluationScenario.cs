@@ -13,7 +13,7 @@ namespace WhatToDoAPI.DataAccess
         public string Description { get; set; }
         public string UserDoId { get; set; }
 
-        public List<EvaluationCondition> EvaluationConditions { get; set; }
+       // public List<EvaluationCondition> EvaluationConditions { get; set; }
 
     }
 }

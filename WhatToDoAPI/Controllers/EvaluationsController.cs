@@ -24,78 +24,105 @@ namespace WhatToDoAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetEvaluation([FromRoute] int id)
+        public async Task<IActionResult> GetEvaluation([FromRoute] int id)
         {
+            
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            //List<T> conditionsList = new List<T>();
-
-            var conditionNameList = (from sc in _context.Scenario
-                                             where sc.Id == id
-                                             select new
-                                             {
-                                                 ConditionFiveName = sc.ConditionFiveName,
-                                                 ConditionFourName = sc.ConditionFourName,
-                                                 ConditionThreeName = sc.ConditionThreeName,
-                                                 ConditionTwoName = sc.ConditionTwoName,
-                                                 ConditionOneName = sc.ConditionOneName
-                                             });
-            var conditionPreferenceList = (from sc in _context.Scenario
-                                           where sc.Id == id
-                                           select new
-                                           {
-                                               ConditionFivePreference = sc.ConditionFivePreference,
-                                               ConditionFourPreference = sc.ConditionFourPreference,
-                                               ConditionThreePreference = sc.ConditionThreePreference,
-                                               ConditionTwoPreference = sc.ConditionTwoPreference,
-                                               ConditionOnePreference = sc.ConditionOnePreference
-                                           });
-            var conditionTypeList = (from sc in _context.Scenario
-                                           where sc.Id == id
-                                           select new
-                                           {
-                                               ConditionFiveType = sc.ConditionFiveType,
-                                               ConditionFourType = sc.ConditionFourType,
-                                               ConditionThreeType = sc.ConditionThreeType,
-                                               ConditionTwoType = sc.ConditionTwoType,
-                                               ConditionOneType = sc.ConditionOneType
-                                           });
-            var conditionRankList = (from sc in _context.Scenario
-                                        where sc.Id == id
-                                        select new
-                                        {
-                                            ConditionFiveRank = sc.ConditionFiveRank,
-                                            ConditionFourRank = sc.ConditionFourRank,
-                                            ConditionThreeRank = sc.ConditionThreeRank,
-                                            ConditionTwoRank = sc.ConditionTwoRank,
-                                            ConditionOneRank = sc.ConditionOneRank
-                                        });
-
             
-            string connStr = "server=test1.ce8cn9mhhgds.us-east-1.rds.amazonaws.com;user=Wallen;database=whattodo;port=3306;password=MyRDSdb1";
-            MySqlConnection conn = new MySqlConnection(connStr);
+
+            Scenario selectedScenario = await _context.Scenario.FindAsync(id);
 
 
-            conn.Open();
+            List<string> conditionNames = new List<string>();
 
-            List <EvaluationCondition> EvaluationConditions = new List<EvaluationCondition>();
+            conditionNames.Add(selectedScenario.ConditionFiveName);
+            conditionNames.Add(selectedScenario.ConditionFourName);
+            conditionNames.Add(selectedScenario.ConditionThreeName);
+            conditionNames.Add(selectedScenario.ConditionTwoName);
+            conditionNames.Add(selectedScenario.ConditionOneName);
 
-            int x = 0;
-            while (x < 40)
+
+            List<string> conditionTypes = new List<string>();
+
+            conditionTypes.Add(selectedScenario.ConditionFiveType);
+            conditionTypes.Add(selectedScenario.ConditionFourType);
+            conditionTypes.Add(selectedScenario.ConditionThreeType);
+            conditionTypes.Add(selectedScenario.ConditionTwoType);
+            conditionTypes.Add(selectedScenario.ConditionOneType);
+
+
+            List<string> conditionPreferences = new List<string>();
+
+            conditionPreferences.Add(selectedScenario.ConditionFivePreference);
+            conditionPreferences.Add(selectedScenario.ConditionFourPreference);
+            conditionPreferences.Add(selectedScenario.ConditionThreePreference);
+            conditionPreferences.Add(selectedScenario.ConditionTwoPreference);
+            conditionPreferences.Add(selectedScenario.ConditionOnePreference);
+
+            List<int?> conditionRanks = new List<int?>();
+
+            conditionRanks.Add(selectedScenario.ConditionFiveRank);
+            conditionRanks.Add(selectedScenario.ConditionFourRank);
+            conditionRanks.Add(selectedScenario.ConditionThreeRank);
+            conditionRanks.Add(selectedScenario.ConditionTwoRank);
+            conditionRanks.Add(selectedScenario.ConditionOneRank);
+
+            int? scenarioLocationId = selectedScenario.LocationId;
+
+            List<WeatherCondition> weatherConditions = _context.WeatherCondition.Where(x => x.LocationId == scenarioLocationId).ToList<WeatherCondition>();
+
+            //This is what I want to ultimately return
+            List<Condition> conditions = new List<Condition>();
+
+            foreach (WeatherCondition c in weatherConditions)
             {
-                
+                Condition currentConditionFive = new Condition();
+                Condition currentConditionFour = new Condition();
+                Condition currentConditionThree = new Condition();
+                Condition currentConditionTwo = new Condition();
+                Condition currentConditionOne = new Condition();
+
+                currentConditionFive.Name = conditionNames[0];
+                currentConditionFour.Name = conditionNames[1];
+                currentConditionThree.Name = conditionNames[2];
+                currentConditionTwo.Name = conditionNames[3];
+                currentConditionOne.Name = conditionNames[4];
+
+                currentConditionFive.Preference = conditionPreferences[0];
+                currentConditionFour.Preference = conditionPreferences[1];
+                currentConditionThree.Preference = conditionPreferences[2];
+                currentConditionTwo.Preference = conditionPreferences[3];
+                currentConditionOne.Preference = conditionPreferences[4];
+
+                currentConditionFive.Rank = conditionRanks[0];
+                currentConditionFour.Rank = conditionRanks[1];
+                currentConditionThree.Rank = conditionRanks[2];
+                currentConditionTwo.Rank = conditionRanks[3];
+                currentConditionOne.Rank = conditionRanks[4];
+
+                string strName = _context.WeatherCondition.//.Where(x => x.Equals())
+               
+
+
             }
 
+            int i = 0;
+            while (i <= 320)
+            {
+
+            }
+            
+
+
 
             
 
-            
 
-
-            return Ok();
+            return Ok(weatherConditions);
         }
 
 

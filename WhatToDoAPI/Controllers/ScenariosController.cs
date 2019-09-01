@@ -37,7 +37,7 @@ namespace WhatToDoAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            var scenario = await _context.Scenario.FindAsync(id);
+            Scenario scenario = await _context.Scenario.FindAsync(id);
 
             if (scenario == null)
             {
